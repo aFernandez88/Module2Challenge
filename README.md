@@ -1,2 +1,3 @@
 # Module2Challenge
-Food truck menu
+
+order_list = []
