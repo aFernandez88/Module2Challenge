@@ -144,7 +144,6 @@ while place_order:
                         quantity = int(quan_menu_item)  
                     else:
                         quantity = 1
-
     
 
 
@@ -170,29 +169,34 @@ while place_order:
 
     while True:
         # Ask the customer if they would like to order anything else
-        keep_ordering = input("Would you like to keep ordering? (Y)es or (N)o ")
+        keep_ordering = input("Would you like to keep ordering? (Y)es or (N)o 123")
         print("keep ordering", keep_ordering )
         # 5. Check the customer's input
+        print(keep_ordering)
         if keep_ordering == "Y":
-            break
+            print(order_list)
         
-                # Keep ordering
+                # Keep ordering #Exit the keep ordering question loop
+            break
         else: 
             print("Exit the keep ordering question loop")
+            
 
 
                 # Complete the order
             place_order = False
-            break
+        
                 
 
                 # Since the customer decided to stop ordering, thank them for
                 # their order
         print("Thank you for your order")
                 # Exit the keep ordering question loop
+        break
 
 
                 # Tell the customer to try again
+        print("Try again")
 
 
 # Print out the customer's order
